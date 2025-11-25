@@ -165,11 +165,13 @@ const Contact = () => {
                   I'm always open to discussing new opportunities and ideas.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" asChild className="glow-on-hover bg-gradient-primary">
-                    <a href="mailto:soodharsh3@gmail.com">
-                      <Mail className="mr-2 h-5 w-5" />
-                      Send Email
-                    </a>
+                  <Button
+                    size="lg"
+                    className="glow-on-hover bg-gradient-primary"
+                    onClick={() => (window.location.href = 'mailto:soodharsh3@gmail.com')}
+                  >
+                    <Mail className="mr-2 h-5 w-5" />
+                    Send Email
                   </Button>
                   <Button variant="outline" size="lg" asChild className="glow-on-hover">
                     <a href="/Resume_Harsh_Sood.pdf" download>

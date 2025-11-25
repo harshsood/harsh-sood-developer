@@ -67,24 +67,27 @@ const Navigation = () => {
 
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
-            {socialLinks.map((social) => (
-              <Button
-                key={social.label}
-                variant="ghost"
-                size="sm"
-                asChild
-                className="glow-on-hover"
-              >
-                <a
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
+            {socialLinks.map((social) => {
+              const isExternal = social.href.startsWith('http');
+              return (
+                <Button
+                  key={social.label}
+                  variant="ghost"
+                  size="sm"
+                  asChild
+                  className="glow-on-hover"
                 >
-                  <social.icon className="h-5 w-5" />
-                </a>
-              </Button>
-            ))}
+                  <a
+                    href={social.href}
+                    target={isExternal ? '_blank' : undefined}
+                    rel={isExternal ? 'noopener noreferrer' : undefined}
+                    aria-label={social.label}
+                  >
+                    <social.icon className="h-5 w-5" />
+                  </a>
+                </Button>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
@@ -118,24 +121,27 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="flex justify-center space-x-4 pt-4 border-t border-white/10">
-                {socialLinks.map((social) => (
-                  <Button
-                    key={social.label}
-                    variant="ghost"
-                    size="sm"
-                    asChild
-                    className="glow-on-hover"
-                  >
-                    <a
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.label}
+                {socialLinks.map((social) => {
+                  const isExternal = social.href.startsWith('http');
+                  return (
+                    <Button
+                      key={social.label}
+                      variant="ghost"
+                      size="sm"
+                      asChild
+                      className="glow-on-hover"
                     >
-                      <social.icon className="h-5 w-5" />
-                    </a>
-                  </Button>
-                ))}
+                      <a
+                        href={social.href}
+                        target={isExternal ? '_blank' : undefined}
+                        rel={isExternal ? 'noopener noreferrer' : undefined}
+                        aria-label={social.label}
+                      >
+                        <social.icon className="h-5 w-5" />
+                      </a>
+                    </Button>
+                  );
+                })}
               </div>
             </div>
           </div>
