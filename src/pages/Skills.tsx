@@ -149,14 +149,14 @@ const Skills = () => {
                     description: "Developing dynamic websites with PHP, ReactJS, WordPress, and Shopify. Implementing SEO strategies and website performance optimization."
                   },
                   {
-                    period: "04/2024 - 10/2024",
-                    title: "PHP Developer",
+                      period: "04/2024 - 10/2024",
+                      title: "Full Stack Developer",
                     company: "VRCYN, New Delhi",
                     description: "Built dynamic websites and applications with focus on responsive design and SEO optimization."
                   },
                   {
-                    period: "09/2023 - 04/2024",
-                    title: "PHP Developer",
+                      period: "09/2023 - 04/2024",
+                      title: "Full Stack Developer",
                     company: "Digital Brand Crafters, Gurgaon",
                     description: "Developed websites using PHP, ReactJS, Python and Django with emphasis on client satisfaction."
                   },

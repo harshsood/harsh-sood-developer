@@ -27,8 +27,8 @@ const Navigation = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com/harshsood', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:harsh@example.com', label: 'Email' },
+    { icon: Linkedin, href: 'https://linkedin.com/in/harsh-sood', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:soodharsh3@gmail.com', label: 'Email' },
   ];
 
   return (

@@ -63,17 +63,7 @@ const ProjectCard = ({
           ))}
         </div>
 
-        {/* Action Buttons */}
-        <div className="flex space-x-3 pt-2">
-          {githubUrl && githubUrl !== '#' && (
-            <Button variant="outline" size="sm" asChild className="glow-on-hover">
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <Github className="mr-2 h-4 w-4" />
-                View Code
-              </a>
-            </Button>
-          )}
-        </div>
+        {/* Action Buttons (removed "View Code" per request) */}
       </div>
     </div>
   );

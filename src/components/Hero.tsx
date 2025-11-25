@@ -18,7 +18,7 @@ const Hero = () => {
                 <span className="gradient-text">Harsh Sood</span>
               </h1>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-secondary animate-fade-in stagger-3">
-                PHP Developer
+                Full Stack Developer
               </h2>
             </div>
             
