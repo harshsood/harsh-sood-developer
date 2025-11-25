@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/ui/navigation';
 import Footer from '@/components/Footer';
 import SkillCard from '@/components/SkillCard';
@@ -77,6 +78,8 @@ const Skills = () => {
     }
   ];
 
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -150,16 +153,16 @@ const Skills = () => {
                   },
                   {
                       period: "04/2024 - 10/2024",
-                      title: "Full Stack Developer",
-                    company: "VRCYN, New Delhi",
-                    description: "Built dynamic websites and applications with focus on responsive design and SEO optimization."
-                  },
-                  {
+                      title: "PHP Developer",
+                      company: "VRCYN, New Delhi",
+                      description: "Built dynamic websites and applications with focus on responsive design and SEO optimization."
+                    },
+                    {
                       period: "09/2023 - 04/2024",
-                      title: "Full Stack Developer",
-                    company: "Digital Brand Crafters, Gurgaon",
-                    description: "Developed websites using PHP, ReactJS, Python and Django with emphasis on client satisfaction."
-                  },
+                      title: "PHP Developer",
+                      company: "Digital Brand Crafters, Gurgaon",
+                      description: "Developed websites using PHP, ReactJS, Python and Django with emphasis on client satisfaction."
+                    },
                   {
                     period: "02/2023 - 05/2023",
                     title: "Web Developer Intern",
@@ -251,7 +254,7 @@ const Skills = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
-                  onClick={() => window.location.href = '/contact'}
+                  onClick={() => navigate('/contact')}
                   className="px-8 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-semibold glow-on-hover transition-all duration-300"
                 >
                   Hire Me

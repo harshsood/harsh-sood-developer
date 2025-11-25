@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowDown, Download, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import profilePhoto from '@/assets/profile-photo.jpeg';
@@ -30,10 +31,10 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in stagger-4">
               <Button size="lg" asChild className="glow-on-hover bg-gradient-primary border-0 shadow-primary">
-                <a href="/contact">
+                <Link to="/contact">
                   <Mail className="mr-2 h-5 w-5" />
                   Get In Touch
-                </a>
+                </Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="glow-on-hover">
                 <a href="/Resume_Harsh_Sood.pdf" download>

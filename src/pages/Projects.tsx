@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/ui/navigation';
 import Footer from '@/components/Footer';
 import ProjectCard from '@/components/ProjectCard';
@@ -131,6 +132,8 @@ const Projects = () => {
     ? projects 
     : projects.filter(project => project.category === activeFilter);
 
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -191,7 +194,7 @@ const Projects = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
-                  onClick={() => window.location.href = '/contact'}
+                  onClick={() => navigate('/contact')}
                   className="px-8 py-3 bg-gradient-primary text-primary-foreground rounded-lg font-semibold glow-on-hover transition-all duration-300"
                 >
                   Start a Project

@@ -122,13 +122,13 @@ const Contact = () => {
                 </div>
                 <div className="border-l-2 border-primary/50 pl-6">
                   <div className="text-sm text-primary/70 font-semibold mb-1">04/2024 – 10/2024</div>
-                    <h4 className="text-lg font-bold mb-2">Full Stack Developer</h4>
-                    <p className="text-muted-foreground mb-2">VRCYN - New Delhi</p>
+                  <h4 className="text-lg font-bold mb-2">PHP Developer</h4>
+                  <p className="text-muted-foreground mb-2">VRCYN - New Delhi</p>
                 </div>
                 <div className="border-l-2 border-primary/30 pl-6">
                     <div className="text-sm text-primary/50 font-semibold mb-1">09/2023 - 04/2024</div>
-                    <h4 className="text-lg font-bold mb-2">Full Stack Developer</h4>
-                    <p className="text-muted-foreground mb-2">Digital Brand Crafters - Gurgaon</p>
+                  <h4 className="text-lg font-bold mb-2">PHP Developer</h4>
+                  <p className="text-muted-foreground mb-2">Digital Brand Crafters - Gurgaon</p>
                 </div>
               </div>
             </div>

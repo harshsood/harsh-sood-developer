@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
@@ -22,29 +23,19 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Home
-                </a>
+                <Link to="/" className="text-muted-foreground hover:text-primary transition-colors text-sm">Home</Link>
               </li>
               <li>
-                <a href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  About
-                </a>
+                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">About</Link>
               </li>
               <li>
-                <a href="/projects" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Projects
-                </a>
+                <Link to="/projects" className="text-muted-foreground hover:text-primary transition-colors text-sm">Projects</Link>
               </li>
               <li>
-                <a href="/skills" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Skills
-                </a>
+                <Link to="/skills" className="text-muted-foreground hover:text-primary transition-colors text-sm">Skills</Link>
               </li>
               <li>
-                <a href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                  Contact
-                </a>
+                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">Contact</Link>
               </li>
             </ul>
           </div>
