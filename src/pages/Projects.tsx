@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: "Ovihams",
       url: "https://ovihams.com/",
-      description: "A comprehensive e-commerce platform delivering quality products with seamless shopping experience and reliable customer service.",
+      description: "A comprehensive e-commerce platformfor hospital delivering services for online and offline consultation for the patients.",
       image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop"
     },
     {
@@ -40,12 +40,6 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
     },
     {
-      title: "PPC SEO Marketing",
-      url: "https://ppcseomarketing.com/",
-      description: "Full-service digital marketing agency specializing in PPC campaigns, SEO optimization, and strategic online growth solutions.",
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&h=600&fit=crop"
-    },
-    {
       title: "Clavius Legal",
       url: "http://claviuslegal.com/",
       description: "Professional legal services firm providing expert counsel and comprehensive legal solutions across various practice areas.",
@@ -54,13 +48,13 @@ const Projects = () => {
     {
       title: "Big Champs",
       url: "https://bigchamps.in/",
-      description: "Premier sports and fitness platform connecting athletes, coaches, and enthusiasts with world-class training programs.",
+      description: "Premier real estate villas provider for the senior citizens.",
       image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"
     },
     {
       title: "Chill Memories",
       url: "https://chillmemories.com/",
-      description: "Creative photography and videography services capturing precious moments and turning them into timeless memories.",
+      description: "Authentic travel experiences across India with customized tour packages showcasing culture, heritage, and natural beauty.",
       image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop"
     },
     {
