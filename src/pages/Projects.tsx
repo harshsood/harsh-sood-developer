@@ -3,13 +3,85 @@ import { useNavigate } from 'react-router-dom';
 import Navigation from '@/components/ui/navigation';
 import Footer from '@/components/Footer';
 import ProjectCard from '@/components/ProjectCard';
-import { FolderGit2 } from 'lucide-react';
+import LiveProjectCard from '@/components/LiveProjectCard';
+import { FolderGit2, Rocket } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 // Using a consistent project icon for all cards
 const projectImage = "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=300&fit=crop";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
+
+  const liveProjects = [
+    {
+      title: "Forescribe AI",
+      url: "https://www.forescribe.ai/",
+      description: "An innovative AI-powered platform transforming how businesses create and manage content with advanced automation and intelligent solutions.",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Ovihams",
+      url: "https://ovihams.com/",
+      description: "A comprehensive e-commerce platform delivering quality products with seamless shopping experience and reliable customer service.",
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Snapping Turtles",
+      url: "https://snappingturtles.in/",
+      description: "Professional digital services company specializing in web development, design, and innovative tech solutions for modern businesses.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+    },
+    {
+      title: "SR4IPR",
+      url: "https://sr4ipr.in/",
+      description: "Expert intellectual property rights services providing comprehensive legal solutions for patents, trademarks, and IP protection.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
+    },
+    {
+      title: "PPC SEO Marketing",
+      url: "https://ppcseomarketing.com/",
+      description: "Full-service digital marketing agency specializing in PPC campaigns, SEO optimization, and strategic online growth solutions.",
+      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Clavius Legal",
+      url: "http://claviuslegal.com/",
+      description: "Professional legal services firm providing expert counsel and comprehensive legal solutions across various practice areas.",
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Big Champs",
+      url: "https://bigchamps.in/",
+      description: "Premier sports and fitness platform connecting athletes, coaches, and enthusiasts with world-class training programs.",
+      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Chill Memories",
+      url: "https://chillmemories.com/",
+      description: "Creative photography and videography services capturing precious moments and turning them into timeless memories.",
+      image: "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Truly India Tours",
+      url: "https://www.trulyindiatours.com/",
+      description: "Authentic travel experiences across India with customized tour packages showcasing culture, heritage, and natural beauty.",
+      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Riveira Hills",
+      url: "https://riveirahills.com/",
+      description: "Premium real estate development offering luxury residential properties with modern amenities and scenic locations.",
+      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop"
+    },
+    {
+      title: "Dr. Naina's SNH",
+      url: "https://www.drnainasnh.co.in/",
+      description: "Professional healthcare services providing comprehensive medical care with state-of-the-art facilities and expert practitioners.",
+      image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop"
+    }
+  ];
 
   const projects = [
     {
@@ -146,10 +218,59 @@ const Projects = () => {
               My <span className="gradient-text">Projects</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A collection of projects showcasing my skills in software development, 
-              web design, and data analysis. Each project represents a unique challenge 
+              A collection of projects showcasing my skills in software development,
+              web design, and data analysis. Each project represents a unique challenge
               and learning experience.
             </p>
+          </div>
+
+          {/* Live Client Projects Carousel */}
+          <section className="mb-24 animate-fade-in">
+            <div className="flex items-center justify-center gap-3 mb-10">
+              <Rocket className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl md:text-4xl font-bold text-center">
+                Live <span className="gradient-text">Client Projects</span>
+              </h2>
+            </div>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              Explore the live websites and applications I've built for clients across various industries.
+              Each project showcases real-world solutions and professional web development.
+            </p>
+
+            <div className="relative px-12">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  Autoplay({
+                    delay: 4000,
+                  })
+                ]}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-4">
+                  {liveProjects.map((project, index) => (
+                    <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                      <LiveProjectCard {...project} />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="glass-card border-primary/20 hover:bg-primary/20" />
+                <CarouselNext className="glass-card border-primary/20 hover:bg-primary/20" />
+              </Carousel>
+            </div>
+          </section>
+
+          {/* Divider */}
+          <div className="relative mb-20">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-primary/20"></div>
+            </div>
+            <div className="relative flex justify-center text-sm">
+              <span className="glass-card px-6 py-2 text-muted-foreground">Personal & Academic Projects</span>
+            </div>
           </div>
 
           {/* Filter Buttons */}
