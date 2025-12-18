@@ -41,15 +41,9 @@ const Projects = () => {
     },
     {
       title: "Clavius Legal",
-      url: "http://claviuslegal.com/",
+      url: "https://claviuslegal.com/",
       description: "Professional legal services firm providing expert counsel and comprehensive legal solutions across various practice areas.",
       image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
-    },
-    {
-      title: "Big Champs",
-      url: "https://bigchamps.in/",
-      description: "Premier real estate villas provider for the senior citizens.",
-      image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop"
     },
     {
       title: "Chill Memories",
