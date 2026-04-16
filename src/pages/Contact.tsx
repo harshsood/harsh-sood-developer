@@ -43,7 +43,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/harsh-sood",
+      href: "https://www.linkedin.com/in/harsh-sood-1bb971200/",
       username: "Harsh Sood"
     }
   ];

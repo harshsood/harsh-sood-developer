@@ -78,7 +78,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/harsh-sood"
+                href="https://www.linkedin.com/in/harsh-sood-1bb971200/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card p-2 hover:bg-primary/10 transition-colors"
