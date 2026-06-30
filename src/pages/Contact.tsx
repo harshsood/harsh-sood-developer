@@ -174,7 +174,8 @@ const Contact = () => {
                     Send Email
                   </Button>
                   <Button variant="outline" size="lg" asChild className="glow-on-hover">
-                    <a href="/Resume_Harsh_Sood.pdf" download>
+                    <a href="/Resume - Harsh Sood - update5.pdf
+" download>
                       <Download className="mr-2 h-5 w-5" />
                       Download CV
                     </a>
